@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-container2 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.grid-container4 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainSidebar{
+min-height:100vh;
+object-fit: fill;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeDivs{
+height:1000px;
+width:1000px;
+background-color: #db9ac6;
+color: blue;
+object-fit: fill;
+min-height:100vh;
+text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.fit{
+  height:1px;
+  width:1px;
+  display: table-row;
+  max-width: 100%;
+  min-width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 100vh;
+  object-fit: fill;
+  margin: auto;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonBaby{
+height:60px;
+width:180px;
+border-radius: 25px;
+border: none;
+font-size: 20pt;
+outline-width: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+height: 60px;
+width: 500px;
+border-radius: 25px;
+border: none;
+font-size: 20pt;
+outline-width: 0;
+}
+
+.babyResult{
+  text-align: center;
+  padding-top:15%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+main .sidebar{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+  max-height: 100vh;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar a {
+    font-size: 18px;
   }
 }
+
+
